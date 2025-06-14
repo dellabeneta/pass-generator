@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pass-deployment
+  namespace: pass
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pass
+  template:
+    metadata:
+      labels:
+        app: pass
+    spec:
+      containers:
+        - name: pass
+          image: dellabeneta/pass:v1
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
