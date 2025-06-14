@@ -35,6 +35,9 @@ const (
 func main() {
 	// Servir arquivos estáticos
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static/"))))
+
+	// Servir favicon.ico da raiz
+	http.HandleFunc("/favicon.ico", faviconHandler)
 	
 	// Rota principal
 	http.HandleFunc("/", homeHandler)
@@ -46,6 +49,10 @@ func main() {
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
+func faviconHandler(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, "./static/favicon.ico")
+}
+
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl := `<!DOCTYPE html>
 <html lang="pt-BR">
@@ -53,6 +60,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Senhas</title>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
