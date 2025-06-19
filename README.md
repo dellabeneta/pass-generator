@@ -1,5 +1,4 @@
-🔐 Pass Generator
-================
+## 🔐 Pass Generator
 
 [![Go Version](https://img.shields.io/badge/Go-1.24.3-00ADD8?style=flat-square&logo=go)](https://golang.org)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
@@ -7,8 +6,8 @@
 
 Um gerador de senhas moderno, seguro e fácil de usar, desenvolvido em Go. Gere senhas fortes com uma interface web intuitiva e responsiva.
 
-Funcionalidades
---------------
+### Funcionalidades
+
 - Geração de senhas com comprimentos personalizáveis (10, 15 ou 20 caracteres)
 - Opções flexíveis de caracteres:
   - Letras maiúsculas (A-Z)
@@ -20,8 +19,8 @@ Funcionalidades
 - Geração criptograficamente segura
 - Alta disponibilidade com Kubernetes
 
-Começando
----------
+### Começando
+
 **Pré-requisitos**
 - Go 1.24.3 ou superior
 - Docker (opcional)
@@ -58,53 +57,53 @@ kubectl apply -f k3s/deployment.yaml
 kubectl apply -f k3s/service.yaml
 ```
 
-Tecnologias
------------
+### Tecnologias
+
 - **Backend**: Go 1.24.3
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Container**: Docker
 - **Orquestração**: Kubernetes/k3s
 - **Segurança**: crypto/rand para geração segura
 
-Configuração
-------------
+### Configuração
+
 O serviço pode ser configurado através das seguintes variáveis de ambiente:
 
 | Variável | Descrição | Padrão |
 |----------|-----------|---------|
 | PORT | Porta do servidor | 8080 |
 
-Estrutura do Projeto
--------------------
+### Estrutura do Projeto
 ```
-pass-generator/
-├── main.go           # Ponto de entrada da aplicação
-├── static/          # Arquivos estáticos
-│   ├── style.css    # Estilos CSS
-│   ├── script.js    # JavaScript do frontend
-│   └── favicon.ico  # Ícone do site
-├── k3s/             # Configurações Kubernetes
+della@ubuntu:~/projetos/pass-generator$ tree
+.
+├── Dockerfile
+├── go.mod
+├── k3s
 │   ├── deployment.yaml
 │   ├── namespace.yaml
 │   └── service.yaml
-└── Dockerfile       # Configuração Docker
+├── LICENSE
+├── main.go
+├── nuke.sh
+├── README.md
+├── README.md.OLD
+└── static
+    ├── favicon.ico
+    ├── script.js
+    └── style.css
+
+3 directories, 13 files
 ```
 
-Contribuindo
------------
+### Contribuindo
+
 1. Faça um Fork do projeto
 2. Crie sua Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
 4. Push para a Branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-Licença
--------
+### Licença
+
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-Desenvolvido por [Michel Torres Dellabeneta](https://github.com/dellabeneta)
-
-
-### Teste
-
-
