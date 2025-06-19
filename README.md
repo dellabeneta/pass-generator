@@ -87,13 +87,12 @@ della@ubuntu:~/projetos/pass-generator$ tree
 ├── main.go
 ├── nuke.sh
 ├── README.md
-├── README.md.OLD
 └── static
     ├── favicon.ico
     ├── script.js
     └── style.css
 
-3 directories, 13 files
+3 directories, 12 files
 ```
 
 ### Contribuindo
