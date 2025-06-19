@@ -1,4 +1,4 @@
-## 🔐 Pass Generator
+## 🔑 Pass Generator
 
 [![Go Version](https://img.shields.io/badge/Go-1.24.3-00ADD8?style=flat-square&logo=go)](https://golang.org)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
