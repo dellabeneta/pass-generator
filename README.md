@@ -86,13 +86,15 @@ della@ubuntu:~/projetos/pass-generator$ tree
 ├── LICENSE
 ├── main.go
 ├── nuke.sh
+├── pass.png
 ├── README.md
 └── static
     ├── favicon.ico
     ├── script.js
     └── style.css
 
-3 directories, 12 files
+3 directories, 13 files
+della@ubuntu:~/projetos/pass-generator$
 ```
 
 ### Contribuindo
