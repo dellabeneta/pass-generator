@@ -1,8 +1,7 @@
 ## Pass Generator
 
-[![Go Version](https://img.shields.io/badge/Go-1.24.3-00ADD8?style=flat-square&logo=go)](https://golang.org)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker)](https://hub.docker.com/r/dellabeneta/pass)
+![Pipeline](https://github.com/dellabeneta/pass-generator/actions/workflows/main.yaml/badge.svg)
+![GHCR version](https://img.shields.io/badge/ContainerVersion-v11-blue)
 
 Um gerador de senhas moderno, seguro e fácil de usar, desenvolvido em Go. Gere senhas fortes com uma interface web intuitiva e responsiva.
 
