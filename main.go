@@ -59,13 +59,13 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Senhas</title>
+    <title>Criados de Senhas</title>
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Pass Gerador</h1>
+        <h1>Gerador de Senhas</h1>
         
         <form id="passwordForm">
             <div class="form-group">
