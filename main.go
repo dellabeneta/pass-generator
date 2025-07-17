@@ -65,7 +65,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 </head>
 <body>
     <div class="container">
-        <h1>Gerador de Senhas</h1>
+        <h1>Pass Gerador</h1>
         
         <form id="passwordForm">
             <div class="form-group">
