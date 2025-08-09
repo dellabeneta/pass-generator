@@ -1,7 +1,6 @@
 ## Pass Generator
 
 ![Pipeline](https://github.com/dellabeneta/pass-generator/actions/workflows/main.yaml/badge.svg)
-![GHCR version](https://img.shields.io/badge/ContainerVersion-v11-blue)
 
 Um gerador de senhas moderno, seguro e fácil de usar, desenvolvido em Go. Gere senhas fortes com uma interface web intuitiva e responsiva.
 
